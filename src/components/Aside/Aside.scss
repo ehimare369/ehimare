@@ -4,11 +4,10 @@
   width: 16rem;
   background: $secondary;
   height: 100vh;
-  margin-top: 0;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: center;
   color: $gray;
   border-right: $border;
 
@@ -19,7 +18,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      padding: 1rem 0;
+      padding: 0.3rem 0;
       // font-size: 1.2rem;
       color: $gray;
       padding-left: 1rem;
