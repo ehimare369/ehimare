@@ -16,6 +16,7 @@ const Profile = () => {
           );
         })}
       </div>
+      <button>download cv</button>
     </section>
   );
 };

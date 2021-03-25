@@ -2,18 +2,19 @@
 
 .Profile {
   border-bottom: $border;
+  padding-bottom: 0.5rem;
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 75%;
     border-radius: 50%;
     border: $border;
     transition: transform 0.3s;
   }
 
   img:hover {
-    transform: scale(1.06);
+    transform: scale(1.1);
   }
 
   .follow {
@@ -23,11 +24,40 @@
   }
 
   a {
-    font-size: 1.2rem;
-    padding-right: 0.6rem;
+    display: block;
+    margin: auto;
+    font-size: 1rem;
+    padding: 0.2rem;
     color: $borderC;
+    background: $secondary;
+    border-radius: 50%;
+    border: $border;
+    transition: transform 0.2s;
   }
   a:hover {
+    color: $secondary;
+    background: $borderC;
+    transform: scale(1.1);
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3rem;
+    text-transform: uppercase;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    font-weight: 600;
     color: $primary;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: $border;
+  }
+  button:hover {
+    background: $primary;
+    color: white;
+    transform: scale(1.1);
   }
 }
