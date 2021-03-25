@@ -10,7 +10,7 @@ const Profile = () => {
         {followLinks.map((link) => {
           const { label, icon, url } = link;
           return (
-            <a key={label} href="{url}">
+            <a key={label} href={url}>
               {icon}
             </a>
           );
