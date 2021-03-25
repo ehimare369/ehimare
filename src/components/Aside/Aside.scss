@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       text-decoration: none;
-      padding: 0.6rem 0;
+      padding: 1rem 0;
       // font-size: 1.2rem;
       color: $gray;
       padding-left: 1rem;
@@ -30,7 +30,6 @@
     }
     .link:hover,
     .link:focus {
-      // width: 100%;
       color: $primary;
       background: $gray;
     }

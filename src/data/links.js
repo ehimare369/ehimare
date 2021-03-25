@@ -1,4 +1,9 @@
 import { RiHomeHeartFill } from "react-icons/ri";
+import { IoMdContacts } from "react-icons/io";
+// import { GrServices } from "react-icons/gr";
+import { AiFillWechat } from "react-icons/ai";
+import { GiLighthouse, GiLightningSpanner } from "react-icons/gi";
+import { FaBlog } from "react-icons/fa";
 
 export const navLinks = [
   {
@@ -7,27 +12,27 @@ export const navLinks = [
     url: "/",
   },
   {
-    icon: "",
+    icon: <IoMdContacts />,
     label: "about",
     url: "/about",
   },
   {
-    icon: "",
+    icon: <GiLightningSpanner />,
     label: "services",
     url: "/services",
   },
   {
-    icon: "",
+    icon: <GiLighthouse />,
     label: "projects",
     url: "/projects",
   },
   {
-    icon: "",
+    icon: <FaBlog />,
     label: "blog",
     url: "/blog",
   },
   {
-    icon: "",
+    icon: <AiFillWechat />,
     label: "contact",
     url: "/contact",
   },
