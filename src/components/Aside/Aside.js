@@ -15,23 +15,25 @@ const Aside = () => {
   };
   return (
     <>
-      <button className="drawer" onClick={handleToggle}>
-        {isOpened ? <FaTimes /> : <FaBars />}
-      </button>
-      <aside className={`Aside ${isOpened ? " Opened" : ""}`}>
-        <Profile />
-        <nav>
-          {navLinks.map((link) => {
-            const { icon, label, url } = link;
-            return (
-              <Link className="link" key={url} to={url}>
-                {icon} <span>{label}</span>
-              </Link>
-            );
-          })}
-        </nav>
-        <Footer />
-      </aside>
+      <div className="Aside">
+        <button className="drawer" onClick={handleToggle}>
+          {isOpened ? <FaTimes /> : <FaBars />}
+        </button>
+        <aside className={`menu ${isOpened ? " Opened" : ""}`}>
+          <Profile />
+          <nav>
+            {navLinks.map((link) => {
+              const { icon, label, url } = link;
+              return (
+                <Link className="link" key={url} to={url}>
+                  {icon} <span>{label}</span>
+                </Link>
+              );
+            })}
+          </nav>
+          <Footer />
+        </aside>
+      </div>
     </>
   );
 };
