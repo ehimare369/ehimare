@@ -1,9 +1,14 @@
-import HomeLayout from "./layouts/HomeLayout";
+// import { BrowserRouter as Router } from "react-router-dom";
+import HomeLayoutRoute from "./layouts/HomeLayout/HomeLayoutRoute";
+// import Aside from "./components/Aside/Aside";
 
 function App() {
   return (
     <div className="App">
-      <HomeLayout />
+      {/* <Router>
+        <Aside />
+      </Router> */}
+      <HomeLayoutRoute />
     </div>
   );
 }

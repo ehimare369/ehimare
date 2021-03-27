@@ -1,37 +1,61 @@
 @import "./../../App.scss";
 
 .Aside {
-  width: 16rem;
-  background: $secondary;
-  height: 100vh;
-  margin-top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  // align-items: center;
-  color: $gray;
-  border-right: $border;
+  .drawer {
+    color: $borderC;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .drawer:focus {
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
 
-  nav {
-    text-transform: uppercase;
+  .menu {
+    width: 0;
+    background: $secondary;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $gray;
+    transition: width 0.7s;
+    border-top: $border;
+    overflow: hidden;
 
-    .link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      padding: 1rem 0;
-      // font-size: 1.2rem;
-      color: $gray;
-      padding-left: 1rem;
-      transition: 0.3s all ease-in-out;
+    nav {
+      text-transform: uppercase;
+
+      .link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.3rem 0;
+        // font-size: 1.2rem;
+        color: $gray;
+        padding-left: 1rem;
+        transition: 0.3s all ease-in-out;
+        font-weight: 600;
+      }
+      .link span {
+        padding-left: 0.9rem;
+      }
+      .link:hover,
+      .link:focus {
+        color: $primary;
+        background: $gray;
+      }
     }
-    .link span {
-      padding-left: 0.9rem;
-    }
-    .link:hover,
-    .link:focus {
-      color: $primary;
-      background: $gray;
-    }
+  }
+
+  .Opened {
+    width: 13rem;
+    padding: 0.5rem;
+    border-right: $border;
   }
 }

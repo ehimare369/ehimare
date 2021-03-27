@@ -1,8 +1,23 @@
+import "./Profile.scss";
+import image from "./ehimare.jpg";
+import { followLinks } from "../../data/links";
+
 const Profile = () => {
   return (
-    <div>
-      <h2>Profile and social icons</h2>
-    </div>
+    <section className="Profile">
+      <img src={image} alt="ehimare" />
+      <div className="follow">
+        {followLinks.map((link) => {
+          const { label, icon, url } = link;
+          return (
+            <a key={label} href={url}>
+              {icon}
+            </a>
+          );
+        })}
+      </div>
+      <button>download cv</button>
+    </section>
   );
 };
 

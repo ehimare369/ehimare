@@ -1,0 +1,127 @@
+@import "./../../App.scss";
+
+.HomePage {
+  color: $borderC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  h1 {
+    font-size: 1.5rem;
+    .name {
+      color: $gray;
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: 0.16rem;
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    .title {
+      color: $gray;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    .title::after {
+      content: "";
+      animation: spin 4s ease infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        content: "<Front End Developer />";
+      }
+      50% {
+        content: "<Back End Developer />";
+      }
+      100% {
+        content: "<Fullstack Developer />";
+      }
+    }
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+// }
+
+@media (min-width: 415px) {
+  .HomePage {
+    h1 {
+      font-size: 1.9rem;
+      text-align: center;
+      .name {
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+      }
+    }
+    h2 {
+      font-size: 1.9rem;
+      text-align: center;
+      .title {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+    }
+    p {
+      font-size: 1.9rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .HomePage {
+    h1 {
+      font-size: 2.4rem;
+      text-align: center;
+      .name {
+        font-size: 3rem;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+      }
+    }
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      .title {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 999px) {
+  .HomePage {
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      .name {
+        font-size: 3.7rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+      }
+    }
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      .title {
+        font-size: 3.7rem;
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+}

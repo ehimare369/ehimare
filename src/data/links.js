@@ -3,7 +3,8 @@ import { IoMdContacts } from "react-icons/io";
 // import { GrServices } from "react-icons/gr";
 import { AiFillWechat } from "react-icons/ai";
 import { GiLighthouse, GiLightningSpanner } from "react-icons/gi";
-import { FaBlog } from "react-icons/fa";
+import { FaBlog, FaMediumM, FaStackOverflow } from "react-icons/fa";
+import { FiTwitter, FiGithub, FiYoutube, FiLinkedin } from "react-icons/fi";
 
 export const navLinks = [
   {
@@ -38,35 +39,35 @@ export const navLinks = [
   },
 ];
 
-export const FOLLOW_LINKS = [
+export const followLinks = [
   {
-    icon: "",
-    name: "tw",
+    icon: <FiTwitter />,
+    label: "tw",
     url: "/",
   },
   {
-    icon: "",
-    name: "gh",
+    icon: <FiGithub />,
+    label: "gh",
     url: "/about",
   },
   {
-    icon: "",
-    name: "yt",
+    icon: <FiYoutube />,
+    label: "yt",
     url: "/services",
   },
   {
-    icon: "",
-    name: "li",
+    icon: <FiLinkedin />,
+    label: "li",
     url: "/projects",
   },
   {
-    icon: "",
-    name: "md",
+    icon: <FaMediumM />,
+    label: "md",
     url: "/blog",
   },
   {
-    icon: "",
-    name: "st",
+    icon: <FaStackOverflow />,
+    label: "st",
     url: "/contact",
   },
 ];
