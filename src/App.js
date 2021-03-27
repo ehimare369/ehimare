@@ -1,9 +1,9 @@
-import "./App.css";
+import HomeLayout from "./layouts/HomeLayout";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to my world of mysteries</h1>
+      <HomeLayout />
     </div>
   );
 }
